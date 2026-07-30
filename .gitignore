@@ -1,0 +1,67 @@
+# ============================================================
+# 论文管理及阅读工具联动AI工作流 — .gitignore
+# ============================================================
+
+# ===== 大体积 PDF 目录（不入库，按需同步到外部存储）=====
+# 爬虫下载的 PDF
+AI/
+Database/
+Networks/
+Security/
+Software/
+Theory/
+Graphics/
+HCI/
+Architecture/
+Interdisciplinary/
+
+# MCM/ICM 美赛论文 PDF
+MCM-ICM/*/Problem_*/
+MCM-ICM/*/Unknown/
+
+# ===== 缓存 / 临时文件 =====
+state/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# ===== 运行日志 =====
+_crawl_log.txt
+
+# ===== Obsidian vault 个性化配置（不同用户不同）=====
+# 仅排除 workspace（打开的标签页状态），保留插件配置以便共享
+obsidian-vault/.obsidian/workspace.json
+obsidian-vault/.obsidian/appearance.json
+obsidian-vault/.obsidian/graph.json
+obsidian-vault/.obsidian/plugins/*/data.json
+
+# ===== 隐私 / 凭据 =====
+.env
+*.key
+secrets.yaml
+
+# ===== IDE / 编辑器 =====
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 临时调试文件 =====
+_debug_*.py
+_tmp_*.py
+
+# ===== 推荐入库的（不忽略）=====
+# _index.csv / _high_impact.csv / _abstracts.jsonl / _venue_map.json
+# _venue_report.txt / _ccf_a.bib / MCM-ICM/_mcm.bib / MCM-ICM/_mcm_index.csv
+# .trae/ 下的 SKILL.md 和 resources/
+# obsidian-vault/MOC/ Templates/ Literature/ Reviews/
+# 根目录脚本：ccf_crawler.py / bootstrap_*.py / zotero_*.py / verify_obsidian_setup.py
+# README.md / Zotero导入指南.md / 配置指南.md / _uploads
