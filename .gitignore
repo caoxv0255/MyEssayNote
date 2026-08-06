@@ -58,6 +58,15 @@ desktop.ini
 _debug_*.py
 _tmp_*.py
 
+# ===== local tooling (2026-08-06) =====
+.reasonix/
+
+# ===== generated/share artifacts (2026-08-06) =====
+.trae-html-share-packages/
+
+# ===== archived materials (2026-08-06) =====
+MCM-ICM/
+
 # ===== 推荐入库的（不忽略）=====
 # _index.csv / _high_impact.csv / _abstracts.jsonl / _venue_map.json
 # _venue_report.txt / _ccf_a.bib / MCM-ICM/_mcm.bib / MCM-ICM/_mcm_index.csv
